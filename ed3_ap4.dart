@@ -23,7 +23,9 @@ void recebenumero(List<int> numero) {
 //faz a conversao dos numeros
 String converteParaBinario(int numero) {
   final binario = numero.toRadixString(2);
-  final binarioComZeros = binario.substring(0, 5).padLeft(5, '0');
+  final binarioComZeros = binario
+      .substring(0, 5)
+      .padLeft(5, '0'); //metodo criado para o binaro sair com 5 gigitos
   return binarioComZeros;
 }
 
